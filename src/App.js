@@ -75,7 +75,8 @@ class App extends Component {
     }
     if (this.state.direction!=='PAUSE'){
       dots.map(dot => {
-        if (dot[0] == head[0] && dot[1] == head[1]) this.setState({over:true})
+        if (dot[0] === head[0] && dot[1] === head[1]) this.setState({over:true});
+        return true;
       })
       dots.push(head);
       if (!headp) dots.shift();
@@ -83,9 +84,6 @@ class App extends Component {
     } 
   }
   render() {
-    
-      
-        {
           if (!this.state.over) {
             return (
               <div>
@@ -107,10 +105,6 @@ class App extends Component {
             
           }
         }
-        
-      
-  
-  }
 }
 
 export default App;
