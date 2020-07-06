@@ -1,6 +1,6 @@
 {
-  "homepage":"https://wadjih-bencheikh18.github.io/snakegame/",
-  "name": "snakegame",
+  "homepage":"https://wadjih-bencheikh18.github.io/snake/",
+  "name": "snake",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
