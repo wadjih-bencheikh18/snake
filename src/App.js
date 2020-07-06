@@ -2,6 +2,7 @@ import './App.css';
 import React, { Component } from 'react';
 import Snake from './Snake'
 import Food from './Food';
+import Control from './Control';
 class App extends Component {
   state={
     direction:'PAUSE',
@@ -92,6 +93,10 @@ class App extends Component {
                   <Snake snakeDots={this.state.snakeDots} />
                   <Food FoodDots={this.state.FoodDots} />
                 </div>
+                <Control BTN='UP' onClick={() => this.setState({ direction: 'UP' })}/>
+                <Control BTN='LEFT' onClick={() => this.setState({ direction: 'LEFT' })} />
+                <Control BTN='RIGHT' onClick={() => this.setState({ direction: 'RIGHT' })} />
+                <Control BTN='DOWN' onClick={() => this.setState({ direction: 'DOWN' })} />
               </div>
             );
           }
