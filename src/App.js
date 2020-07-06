@@ -94,8 +94,10 @@ class App extends Component {
                   <Food FoodDots={this.state.FoodDots} />
                 </div>
                 <Control BTN='UP' onClick={() => this.setState({ direction: 'UP' })}/>
+                <br/>
                 <Control BTN='LEFT' onClick={() => this.setState({ direction: 'LEFT' })} />
                 <Control BTN='RIGHT' onClick={() => this.setState({ direction: 'RIGHT' })} />
+                <br />
                 <Control BTN='DOWN' onClick={() => this.setState({ direction: 'DOWN' })} />
               </div>
             );
