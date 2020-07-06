@@ -6,14 +6,14 @@ import Control from './Control';
 class App extends Component {
   state={
     direction:'PAUSE',
-    speed:'100',
+    speed:100,
     snakeDots:[
       [0,0],
       [1,0],
       [2, 0],
     ],
     over:false,
-    score:1,
+    score:0,
     FoodDots: [Math.floor(Math.random() * 50) * 2 + "%", Math.floor(Math.random() * 50) * 2 + "%"]
   }
   componentDidMount(){
