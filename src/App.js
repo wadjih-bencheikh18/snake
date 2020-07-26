@@ -6,7 +6,7 @@ import Control from './Control';
 class App extends Component {
   state={
     direction:'PAUSE',
-    speed:100,
+    speed:80,
     snakeDots:[
       [0,0],
       [1,0],
